@@ -2356,7 +2356,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.87579
+  orthographic size: 6.5815587
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2380,12 +2380,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314132017}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.242046, y: 0.6268975, z: -5.7388806}
+  m_LocalScale: {x: 0.994838, y: 0.41516393, z: 0.57388806}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2070595321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &459614643
 PrefabInstance:
@@ -2425,7 +2425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8982682378894184093, guid: 1fababfdbfb9d4346ac8aadd18be540b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.88906896
+      value: -0.69
       objectReference: {fileID: 0}
     - target: {fileID: 8982682378894184093, guid: 1fababfdbfb9d4346ac8aadd18be540b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2461,7 +2461,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8982682378894184093, guid: 1fababfdbfb9d4346ac8aadd18be540b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 314132020}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1825743535792127424, guid: 1fababfdbfb9d4346ac8aadd18be540b, type: 3}
       insertIndex: -1
@@ -2499,7 +2502,7 @@ Transform:
   m_GameObject: {fileID: 812336770}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.000002, y: 1, z: 0}
+  m_LocalPosition: {x: 18.351, y: 1.0419, z: 0}
   m_LocalScale: {x: 1.4663922, y: 1.8352814, z: 1.4663922}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2551,7 +2554,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 110, y: 7.68}
+  m_Size: {x: 110.88521, y: 7.6343684}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2694,10 +2697,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!4 &2070595321 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8982682378894184093, guid: 1fababfdbfb9d4346ac8aadd18be540b, type: 3}
+  m_PrefabInstance: {fileID: 459614643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 314132020}
   - {fileID: 1866942863}
   - {fileID: 459614643}
