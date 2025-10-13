@@ -8,7 +8,11 @@ public class SonicMovement : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 8f;
-    [SerializeField] private float jumpForce = 16f;
+    [SerializeField] private float jumpForce = 10f;
+
+    [Header("Visuals")]
+    [SerializeField] private GameObject standVisual;  // block
+    [SerializeField] private GameObject jumpVisual;
 
     private Rigidbody2D rb;
     private float moveHorz;
@@ -20,7 +24,8 @@ public class SonicMovement : MonoBehaviour
     {
         jumpPressed = false;
         rb = GetComponent<Rigidbody2D>();
-
+        rb.freezeRotation = true;
+        SetVisual(isJumping: false);
     }
 
     private void Update()
@@ -34,21 +39,30 @@ public class SonicMovement : MonoBehaviour
             jumpPressed = true;
             Debug.Log("Jump pressed");
         }
-            
+
     }
 
     private void FixedUpdate()
     {
-        
+
         rb.velocity = new Vector2(moveHorz * moveSpeed, rb.velocity.y);
 
         // Jump only if grounded
         if (jumpPressed)
         {
             rb.velocity = new Vector2(rb.velocity.x, moveUp * jumpForce);
+            jumpPressed = false;
         }
 
         // consume the press
-        jumpPressed = false;
+        bool ascending = rb.velocity.y > 0.01f;
+        SetVisual(isJumping: ascending);
+
+    }
+    
+    private void SetVisual(bool isJumping)
+    {
+        if (standVisual) standVisual.SetActive(!isJumping);
+        if (jumpVisual)  jumpVisual.SetActive(isJumping);
     }
 }
