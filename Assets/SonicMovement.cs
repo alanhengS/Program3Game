@@ -37,7 +37,6 @@ public class SonicMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jumpPressed = true;
-            Debug.Log("Jump pressed");
         }
 
     }
