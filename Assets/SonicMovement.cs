@@ -1,3 +1,14 @@
+/***************************************************************
+*file: SonicMovement.cs
+*author: Alan Heng
+*class: CS 4700 – Game Development
+*assignment: Program 3
+*date last modified: 10/13/2025
+*
+*purpose: This program defines themovement behavior for the player character Sonic. 
+*
+****************************************************************/
+
 using System;
 using System.Collections;
 using System.Collections.Generic;

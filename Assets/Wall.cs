@@ -1,3 +1,14 @@
+/***************************************************************
+*file: Wall.cs
+*author: Alan Heng
+*class: CS 4700 – Game Development
+*assignment: Program 3
+*date last modified: 10/13/2025
+*
+*purpose: This program defines the wall object that serves as a boundary for enemy movement.
+*
+****************************************************************/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
